@@ -15,7 +15,7 @@ html {
   }
   
   svg {
-    fill:white;
+    fill:cyan;
     background: rgba(0,0,0,0.1);
     padding: 20px;
     border-radius: 50%;
@@ -65,7 +65,7 @@ html {
   }
   
   .plates input:checked + label:before {
-    content: '🕕'; 
+    content: '🎵'; 
   }
   
   .add-items {
