@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    background: url('https://images.unsplash.com/photo-1542059105-72e61aef4b78') center no-repeat;
+    background: url('https://images.unsplash.com/photo-1519155751704-f00dce84d79b') center no-repeat;
     background-size: cover;
     min-height: 100vh;
     display: flex;
@@ -16,7 +16,7 @@ html {
   
   svg {
     fill:cyan;
-    background: rgba(0,0,0,0.1);
+    background: rgba(243, 97, 160, 0.863);
     padding: 20px;
     border-radius: 50%;
     width: 200px;
