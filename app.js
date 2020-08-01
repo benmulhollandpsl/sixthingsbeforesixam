@@ -51,8 +51,7 @@ populateList(items, itemsList)
 
 
 
-const hero = document.querySelector('.wrapper');
-const text = hero.querySelector('h1');
+const hero = document.querySelector('h1');
 const walk = 200; //100px
 
 
@@ -70,10 +69,10 @@ function shadow(e) {
     const yWalk = Math.round((y / height * walk) - (walk / 2));
     //keeps around 50 and 100 instead of zero
   // console.log(x, y);
-  // console.log(xWalk, yWalk);
+  console.log(xWalk, yWalk);
 
-    // text.style.textShadow = `10px 10px 0 red`;
-    text.style.textShadow = `
+    // hero.style.textShadow = `10px 10px 0 red`;
+    hero.style.textShadow = `
       ${xWalk}px ${yWalk}px 0 rgba(255,0,255,0.7),
       ${xWalk * -1}px ${yWalk}px 0 rgba(0,255,255,0.7),
       ${yWalk}px ${xWalk * -1}px 0 rgba(0,255,0,0.7),
