@@ -15,6 +15,6 @@ blog added mid August originally the idea was to make a local storage type of bl
 
 ## progress as of 8/25 for blog
 
-![Gif of 8-25 progress](images/Blog for 6 things before 6.gif)
+![8-25 progress](images/Blog-for-6-things.gif)
 
   
