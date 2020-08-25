@@ -26,7 +26,10 @@ html {
   }
   
   
-  
+  body.fixed-nav .site-wrap {
+    transform: scale(1);
+  }
+
   h2 {
     text-align: center;
     margin: 0;
@@ -87,11 +90,6 @@ html {
     max-width: 350px;
     background: rgba(255,255,255,0.95);
     box-shadow: 0 0 0 10px rgba(0,0,0,0.1);
-    
-
-    
-
-
   }
 
   h1 {
@@ -108,4 +106,34 @@ html {
     color: black;
   }
 
- 
+  /* need to find out why centering and where transition happens */
+  nav {
+    background: 0 5px 0 rgba(255,0,255,0.4);
+    top: 0;
+    width: 100%;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 1;
+  }
+
+
+  body.fixed-nav nav {
+    position: fixed;
+    box-shadow: 0 5px 0 rgba(255,0,255,0.1);
+  }
+
+  nav ul {
+    margin: 0;
+    padding:0;
+    list-style: none;
+    display: flex;
+  }
+
+ nav a {
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    color: white;
+    transition: all 0.2s;
+    text-transform: uppercase;
+  }

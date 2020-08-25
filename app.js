@@ -3,6 +3,10 @@
   const addItems = document.querySelector('.add-items');
   const itemsList = document.querySelector('.plates');
   const items = JSON.parse(localStorage.getItem('items')) || [];
+  
+  //from blog
+  const nav = document.querySelector('#main');
+  const topOfNav = nav.offsetTop;
 
 function addItem(e) {
  e.preventDefault();
@@ -40,9 +44,24 @@ function toggleDone(e) {
 
 }
 
+
+//from blog
+function fixNav() {
+  // console.log(topOfNav);
+    if(window.scrollY >= topOfNav) {
+      document.body.style.paddingTop = nav.offsetHeight + 'px';
+      document.body.classList.add('fixed-nav');
+    } else {
+      document.body.style.paddingTop = 0;
+      document.body.classList.remove('fixed-nav');
+    }
+  
+  }
+
 addItems.addEventListener('submit', addItem);
 itemsList.addEventListener('click', toggleDone);
-
+//from blog 
+window.addEventListener('scroll', fixNav);
 
 populateList(items, itemsList)
 
