@@ -13,8 +13,10 @@ blog added mid August originally the idea was to make a local storage type of bl
 
 
 
-## progress as of 8/25 for blog
+## 8/25 for blog update
 
 ![8-25 progress](images/Blog-for-6-things.gif)
 
-  
+  ## 8/30 
+
+I've broken the functionality of most of the features I've added to these pages, but will use this as a learning template for my next portfolio and blog site.
